@@ -1,3 +1,7 @@
+
+![nanocrypt](https://github.com/user-attachments/assets/15129cbc-2a2d-4b6f-8acb-787b995fc977)
+
+
 # NanoCrypt
 NanoCrypt is a secure encryption and decryption application developed with PyQt5.
 
