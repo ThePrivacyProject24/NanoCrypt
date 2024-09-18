@@ -1,0 +1,151 @@
+/* Allmän stil */
+QWidget {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+    font-family: 'MesloLGM Nerd Font', 'Segoe UI', sans-serif;
+    font-size: 22px;  /* Ökat teckenstorlek */
+}
+
+/* Titel */
+#titleLabel {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Meny */
+QMenuBar {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+}
+
+QMenuBar::item {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+}
+
+QMenuBar::item:selected {
+    background-color: #3C3C3C;  /* Ändrat till mörkare färg för bättre kontrast */
+}
+
+QMenu {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+}
+
+QMenu::item:selected {
+    background-color: #3C3C3C;  /* Ändrat till mörkare färg */
+}
+
+/* Knappar */
+QPushButton {
+    background-color: #3C3C3C;
+    border: 1px solid #5A5A5A;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #5A5A5A;
+}
+
+/* Inmatningsfält */
+QLineEdit, QTextEdit {
+    background-color: #1E1E1E;
+    border: 1px solid #5A5A5A;
+    padding: 4px;
+}
+
+/* ListWidget */
+QListWidget {
+    background-color: #1E1E1E;
+    border: 1px solid #5A5A5A;
+}
+
+/* Kombinationsrutor */
+QComboBox {
+    background-color: #1E1E1E;
+    border: 1px solid #5A5A5A;
+}
+
+/* Meddelanderutor */
+QMessageBox {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+}
+
+/* Dialogrutor */
+QDialog {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+}
+
+/* ProgressBar */
+QProgressBar {
+    background-color: #1E1E1E;
+    border: 1px solid #5A5A5A;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+QProgressBar::chunk {
+    background-color: #5A5A5A;
+}
+
+/* ScrollBar */
+QScrollBar:vertical {
+    background-color: #1E1E1E;
+    width: 16px;
+    margin: 16px 0 16px 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #5A5A5A;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background-color: #1E1E1E;
+    height: 16px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background-color: none;
+}
+
+/* Tooltip */
+QToolTip {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+    border: 1px solid #5A5A5A;
+}
+
+/* Tabs (om tillämpligt) */
+QTabWidget::pane {
+    border: 1px solid #5A5A5A;
+}
+
+QTabBar::tab {
+    background-color: #1E1E1E;
+    border: 1px solid #5A5A5A;
+    padding: 8px;
+}
+
+QTabBar::tab:selected {
+    background-color: #2B2B2B;
+}
+
+/* CheckBox */
+QCheckBox {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+/* RadioButton */
+QRadioButton {
+    background-color: transparent;
+    color: #FFFFFF;
+}
