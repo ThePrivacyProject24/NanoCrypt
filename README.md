@@ -1,47 +1,68 @@
 
 ![nanocrypt](https://github.com/user-attachments/assets/15129cbc-2a2d-4b6f-8acb-787b995fc977)
 
-
 # NanoCrypt
-NanoCrypt is a secure encryption and decryption application developed with PyQt5.
 
-# Overview
+NanoCrypt är en säker krypteringsapplikation för filer och meddelanden.
 
-NanoCrypt is a secure encryption and decryption application developed with PyQt5. It is designed to handle the encryption and decryption of files, text messages, and chats securely. The application employs robust cryptographic methods, including RSA (4096-bit) for asymmetric encryption and AES-256 GCM for symmetric encryption, ensuring the confidentiality and integrity of your data.
-Features
+## Features
 
-### File Encryption/Decryption: 
-Encrypt and decrypt files with the option to split large encrypted files into smaller parts for easier handling and transfer.
+- Asymmetrisk kryptering med RSA (4096 bitar)
+- Symmetrisk kryptering med AES-256 GCM
+- Hantera flera profiler med publika nycklar
+- Automatisk låsning efter inaktivitet
+- GUI byggd med PyQt5
 
-### Text Encryption/Decryption: 
-Encrypt and decrypt text messages, with automatic copying of encrypted text to the clipboard.
+## Installation
 
-### Chat Mode: 
-Comming soon.
+### Från Källkod
 
-### Profile Management: 
-Manage multiple profiles, each associated with a unique public key, enabling encryption for different recipients.
+1. Klona repository:
+    ```bash
+    git clone https://github.com/ThePrivacyProject24/NanoCrypt.git
+    cd NanoCrypt
+    ```
 
-### Inactivity Timeout: 
-Automatically locks the private key after a period of inactivity, requiring re-authentication.
+2. Skapa och aktivera en virtuell miljö:
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate
+    ```
 
+3. Installera beroenden:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-# Installation
-```
-git clone https://github.com/your-username/cryptapp.git
-cd cryptapp
-```
+4. Kör applikationen:
+    ```bash
+    python main.py
+    ```
 
-```
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+### Windows Executable
 
-```
-pip install -r requirements.txt
-```
+För användare som vill använda NanoCrypt utan att installera Python och beroenden, ladda ner den fristående `.exe`-filen från [Releases](https://github.com/ThePrivacyProject24/NanoCrypt/releases).
 
-```
-python main.py
-```
+1. Gå till [Releases](https://github.com/ThePrivacyProject24/NanoCrypt/releases).
+2. Ladda ner `CryptApp.exe` från den senaste releasen.
+3. Kör `CryptApp.exe` för att starta applikationen.
+
+## Usage
+
+1. **Generera Nyckelpar:**
+   Om det är första gången du kör applikationen, kommer guiden att hjälpa dig att generera ditt nyckelpar och välja en standardkatalog.
+
+2. **Kryptera/Fördela Filer:**
+   - **Fil-läge:** Dra och släpp filer för att kryptera dem med vald profil.
+   - **Text-läge:** Skriv meddelanden för att kryptera och dekryptera text.
+   - **Chat-läge:** Skicka krypterade meddelanden till valda profiler.
+
+## Download
+
+[![Download Executable](https://img.shields.io/badge/Download-Executable-brightgreen)](https://github.com/ThePrivacyProject24/NanoCrypt/releases/latest)
+
+## License
+
+MIT License
+
 
